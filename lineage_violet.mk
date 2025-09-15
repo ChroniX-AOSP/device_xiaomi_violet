@@ -42,4 +42,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_PRODUCT_PROPERTIES += \
    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+   ro.cherish.maintainer=Chronix
+
 
