@@ -7,11 +7,13 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common DerpFest AOSP stuff.
+# Inherit some common Cherish OS stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 #Cherish
 CHERISH_BUILD_TYPE := UNOFFICIAL
+CHERISH_MAINTAINER := Chronix
+TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
@@ -26,7 +28,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_violet
+PRODUCT_NAME := cherish_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
